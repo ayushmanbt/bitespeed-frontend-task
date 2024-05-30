@@ -1,30 +1,39 @@
-# React + TypeScript + Vite
+# Bitspeed Frontend Task
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the repository for bitespeed frontend task
 
-Currently, two official plugins are available:
+Here is the hosted link
+[https://bitespeedtask.netlify.app/](https://bitespeedtask.netlify.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## How to run this project locally
 
-## Expanding the ESLint configuration
+This project is written with Vite and React, so to run just follow these stpes
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+1. Install the dependencise `npm install`
 
-- Configure the top-level `parserOptions` property like this:
+2. Run development build `npm run dev`
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+3. Or if you want to build the project and
+   serve run `npm run build && npm run preview`
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Feature notes
+
+1. An actual save and load feature is added where it stores the workflow as
+   JSON files and loads from it
+
+2. I am aware of a crash caused by dragging a node through the work area fast,
+   work on resolving that is under progress,
+   until then just pull the components slowly
+
+3. There can be better implementations to indicating how to
+   add and delete nodes and edges (if you have not figured out its backspace to delete
+   a selected node and edge) which can be the next feature to implement
+
+4. The settings on selection of a node could have been handled better
+
+## Footnotes
+
+This project was done by Ayushman Bilas Thakur
+[ayushmanbilasthakur@gmail.com](mailto:ayushmanbilasthakur@gmail.com)
+
+Check my [protfolio](https://www.ayushmanbthakur.com)

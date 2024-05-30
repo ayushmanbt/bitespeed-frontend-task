@@ -4,6 +4,7 @@ import { Toast } from "./components/Toast.tsx";
 import { createRef, useEffect, useState } from "react";
 
 import commentMessageBlue from "./assets/comment-message-blue.svg";
+import backIcon from "./assets/arrow-back.svg";
 
 function App() {
   const nodes = useNodes();
@@ -129,7 +130,7 @@ function App() {
                     setIsSettingNode(false);
                   }}
                 >
-                  &lt;-
+                  <img src={backIcon} width="20px" />
                 </button>
                 <div className="flex-grow text-center">Message</div>
               </div>
